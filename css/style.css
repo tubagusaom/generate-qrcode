@@ -1,0 +1,32 @@
+    #box-qrcode {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        margin: 20px;
+    }
+    
+    .qrcode {
+        width: 100%;
+        height: 100%;            
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
+
+        border: 2px dotted #ffcccc;
+        border-radius: 3px;
+        /* background-color: #affffd; */
+
+        background: #000046;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #0277bd, transparent);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, rgb(2, 119, 189), transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .img-qr {
+        z-index: 9;
+    }
+  
+  .xxx {
+    background-color: hsl(202, 98%, 37%)!important;
+    background-color: rgba(2, 119, 189, 0.95)!important;
+  }
