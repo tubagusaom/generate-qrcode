@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generate QR Code</title>
     
-    <link href="css/style.css" rel="stylesheet">
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="ICI" /> <!-- website name -->
+	<meta property="og:site" content="https://itconsultant.biz.id/" /> <!-- website link -->
+	<meta property="og:title" content="IT CONSULTANT INDONESIA"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="IT CONSULTANT INDONESIA" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="https://it-konsultan.com/images/t3b3313_transparent.png" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="https://itconsultant.biz.id/" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/maintenance.png">
     
 </head>
 
