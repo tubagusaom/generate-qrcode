@@ -73,9 +73,20 @@
                                         }else {
                                     ?>
                                     
-                                    <div class="col-md-12">
-                                        <input type="text" name="teks_qr" id="teks_qr" minlength="3" required value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>">
-                                        <button type="submit" name="generate" class="btn btn-primary ml-3">Generate</button>
+                                    <!-- <div class="col-md-12">
+                                        <input type="text" class="form-control" name="teks_qr" id="teks_qr" minlength="3" required value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>">
+                                        <button type="submit" name="generate" class="btn btn-primary ml-3 btn-sm">Generate</button>
+                                    </div> -->
+                                    
+                                    <div class="form-group row col-md-12">
+                                        <div class="col-md-9 mb-2">
+                                            <!-- <label for="inputPassword2" class="sr-only">Password</label> -->
+                                            <input type="text" class="form-control" name="teks_qr" id="teks_qr" minlength="3" required value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>" >
+                                        </div>
+
+                                        <div class="col-md-3 mb-2">
+                                            <button type="submit" name="generate" class="btn btn-primary btn-block">Generate</button>
+                                        </div>
                                     </div>
 
                                     <?php

@@ -29,6 +29,9 @@
         //----------------------------------------------------------------------
         public static function png($frame, $filename = false, $pixelPerPoint = 4, $outerFrame = 4,$saveandprint=FALSE)
         {
+
+            // var_dump($frame); die();
+
             $image = self::image($frame, $pixelPerPoint, $outerFrame);
 
             if ($filename === false) {
