@@ -10,7 +10,8 @@
     <meta name="keywords" content="generate, qr, Generate QR, qrcode, barcode" />
 
     <!-- Favicon  -->
-    <link rel="icon" href="images/generate_qr.png">
+    <link rel="shortcut icon" href="images/generate_qr.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/generate_qr.png">
     
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
 	<meta property="og:site_name" content="ICI" /> <!-- website name -->
