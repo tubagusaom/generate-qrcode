@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate QR Code</title>
+
+    <title>ICI - Generate QR Code</title>
+    <meta name="description" content="Generate QR Code By ICI" />
+    <meta name="keywords" content="generate, qr, Generate QR, qrcode, barcode" />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/generate_qr.png">
     
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
 	<meta property="og:site_name" content="ICI" /> <!-- website name -->
@@ -18,8 +24,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Favicon  -->
-    <link rel="icon" href="images/maintenance.png">
+    
     
 </head>
 
