@@ -19,7 +19,7 @@
 	<meta property="og:site" content="https://itconsultant.biz.id/" /> <!-- website link -->
 	<meta property="og:title" content="IT CONSULTANT INDONESIA"/> <!-- title shown in the actual shared post -->
 	<meta property="og:description" content="IT CONSULTANT INDONESIA" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="https://it-konsultan.com/images/t3b3313_transparent.png" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:image" content="https://itconsultant.biz.id/images/t3b3313_transparent.png" /> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="https://itconsultant.biz.id/" /> <!-- where do you want your post to link to -->
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
@@ -108,9 +108,9 @@
 
                 </div>
 
-                <!-- <div class="card-footer text-center">
-
-                </div> -->
+                <div class="card-footer text-center">
+                    xxx
+                </div>
 
             </div>
         </div>

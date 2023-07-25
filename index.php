@@ -13,7 +13,7 @@
 	<meta property="og:site" content="https://itconsultant.biz.id/" /> <!-- website link -->
 	<meta property="og:title" content="IT CONSULTANT INDONESIA"/> <!-- title shown in the actual shared post -->
 	<meta property="og:description" content="IT CONSULTANT INDONESIA" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="https://it-konsultan.com/images/t3b3313_transparent.png" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:image" content="https://itconsultant.biz.id/images/t3b3313_transparent.png" /> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="https://itconsultant.biz.id/" /> <!-- where do you want your post to link to -->
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
@@ -73,8 +73,14 @@
                                 <label class="label-control" for="semail">Email address</label>
                                 <div class="help-block with-errors"></div>
                             </div> -->
+                            
+                            <?php
+                                $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";  
+                                $CurPageURL = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+                            ?>
+
                             <div class="form-group">
-                                <a href="https://it-konsultan.com/" target="_blank">
+                                <a href="<?=$CurPageURL?>qrcode-generator" target="_blank">
                                     <button type="button" class="submit-button-tb">
                                         <i class="fa fa-hand-pointer" style="transform: rotate(100deg);"></i> Click Here
                                     </button>
