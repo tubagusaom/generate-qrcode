@@ -108,8 +108,13 @@
 
                 </div>
 
-                <div class="card-footer text-center">
-                    xxx
+                <div class="card-footer text-center" style="font-size:11.5px;">
+                    Copyright ©
+                    <script>
+                        var CurrentYear = new Date().getFullYear()
+                        document.write(CurrentYear)
+                    </script>
+                    <a href="https://itconsultant.biz.id/" target="_blank">ICI</a>. All rights reserved.
                 </div>
 
             </div>
