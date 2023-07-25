@@ -40,6 +40,51 @@
                             <form method="post" action="" class="text-center">
                                 <div class="input-group">
                                     <?php
+                                        
+                                        if(isset($_POST['downloadBtn'])){
+                                            //getting the user img url from input field
+                                            $imgname = $_POST['name_file'];
+                                            $ext = pathinfo($imgname, PATHINFO_EXTENSION);
+
+                                            $url = "https://";   
+                                            // Append the host(domain name, ip) to the URL.   
+                                            $url.= $_SERVER['HTTP_HOST'];   
+                                            
+                                            // Append the requested resource location to the URL   
+                                            $url.= $_SERVER['REQUEST_URI'];
+
+                                            $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";  
+                                            $CurPageURL = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+                                            $imgURL = $_POST['file']; //storing in variable
+                                            $regPattern = '/\.(jpe?g|png|gif|bmp)$/i'; //pattern to validataing img extension
+
+                                            var_dump($CurPageURL); die();
+
+                                            // if(preg_match($regPattern, $imgURL)){ //if pattern matched to user img url
+                                            //     $initCURL = curl_init($imgURL); //intializing curl
+                                            //     curl_setopt($initCURL, CURLOPT_RETURNTRANSFER, true);
+                                            //     $downloadImgLink = curl_exec($initCURL); //executing curl
+                                            //     curl_close($initCURL); //closing curl
+                                            //     // now we convert the base 64 format to jpg to download
+                                            //     // header('Content-type: image/jpg'); //in which extension you want to save img
+                                            //     // header('Content-Disposition: attachment;filename="qrcode.'.$ext.'"'); //in which name you want to save img
+
+                                            //     header('Content-type: image/jpg'); //in which extension you want to save img
+                                            //     header('Content-Disposition: attachment;filename="image.jpg"'); //in which name you want to save img
+                                            //     echo $downloadImgLink;
+                                            // }
+                                            
+                                            $initCURL = curl_init($imgURL); //intializing curl
+                                            curl_setopt($initCURL, CURLOPT_RETURNTRANSFER, true);
+                                            $downloadImgLink = curl_exec($initCURL); //executing curl
+                                            curl_close($initCURL); //closing curl
+
+                                            header('Content-type: image/jpg'); //in which extension you want to save img
+                                            header('Content-Disposition: attachment;filename="image.jpg"'); //in which name you want to save img
+                                            echo $downloadImgLink;
+                                        }
+                                        
                                         if (isset($_POST['generate'])){
                                             include "plugin/phpqrcode/qrlib.php"; 
                                             /*create folder*/
@@ -52,7 +97,9 @@
                                             QRcode::png($_POST['teks_qr'], $file_path, "H", 10, 2);
                                             
                                             echo "<div class='col-md-12'>";
-                                            echo "<p>Code QR : <a href='".$file_path."' target='_blank' class='btn btn-outline-info btn-sm'>Download</a></p>";
+                                            echo "<input type='text' name='name_file' required value='$file_name'><input type='text' name='file' required value='$file_path'>";
+                                            echo "<p>Code QR : <button type='submit' name='downloadBtn' class='btn btn-outline-info btn-sm'>Download</button></p>";
+                                            
                                             echo "<p><figure class='figure'>";
 
                                     ?>
@@ -70,7 +117,10 @@
                                             echo "</figure></p>";
                                             echo "<p><a href='' class='btn btn-secondary btn-block'>Back </a></p>";
                                             echo "</div>";
-                                        }else {
+
+                                            
+
+                                        } else {
                                     ?>
                                     
                                     <div class="form-group row col-md-12">
