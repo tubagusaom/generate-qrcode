@@ -68,7 +68,7 @@
                                     
                                     <?php
                                             echo "</figure></p>";
-                                            echo "<p><a href='' class='btn btn-secondary'>Back </a></p>";
+                                            echo "<p><a href='' class='btn btn-secondary btn-block'>Back </a></p>";
                                             echo "</div>";
                                         }else {
                                     ?>
@@ -80,8 +80,7 @@
                                     
                                     <div class="form-group row col-md-12">
                                         <div class="col-md-9 mb-2">
-                                            <!-- <label for="inputPassword2" class="sr-only">Password</label> -->
-                                            <input type="text" class="form-control" name="teks_qr" id="teks_qr" minlength="3" required value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>" >
+                                            <input type="text" class="form-control" name="teks_qr" id="teks_qr" minlength="3" required placeholder="Input link" value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>" >
                                         </div>
 
                                         <div class="col-md-3 mb-2">
