@@ -73,11 +73,6 @@
                                         }else {
                                     ?>
                                     
-                                    <!-- <div class="col-md-12">
-                                        <input type="text" class="form-control" name="teks_qr" id="teks_qr" minlength="3" required value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>">
-                                        <button type="submit" name="generate" class="btn btn-primary ml-3 btn-sm">Generate</button>
-                                    </div> -->
-                                    
                                     <div class="form-group row col-md-12">
                                         <div class="col-md-9 mb-2">
                                             <input type="text" class="form-control" name="teks_qr" id="teks_qr" minlength="3" required placeholder="Input link" value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>" >
