@@ -114,7 +114,7 @@
                         var CurrentYear = new Date().getFullYear()
                         document.write(CurrentYear)
                     </script>
-                    <a href="https://itconsultant.biz.id/" target="_blank">ICI</a>. All rights reserved.
+                    <a href="https://itconsultant.biz.id/">ICI</a>. All rights reserved.
                 </div>
 
             </div>
