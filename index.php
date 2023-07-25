@@ -43,7 +43,7 @@
 
                     <div class="card-body">
                         <fieldset>
-                            <form method="post" action="index.php" class="text-center">
+                            <form method="post" action="" class="text-center">
                                 <div class="input-group">
                                     <?php
                                         
