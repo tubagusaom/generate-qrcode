@@ -30,9 +30,9 @@
         public static function png($frame, $filename = false, $pixelPerPoint = 4, $outerFrame = 4,$saveandprint=FALSE)
         {
 
-            // var_dump($frame); die();
-
             $image = self::image($frame, $pixelPerPoint, $outerFrame);
+
+            // var_dump($image); die();
 
             if ($filename === false) {
                 Header("Content-type: image/png");
@@ -76,10 +76,17 @@
 
             $base_image =ImageCreate($imgW, $imgH);
 
+            // color transparent
+            // $col[0] = imagecolorallocatealpha($base_image, 155, 218, 255, 80);
+
             $col[0] = ImageColorAllocate($base_image,255,255,255);
-            // $col[0] = ImageColorAllocate($base_image,155, 218, 255);
+
             $col[1] = ImageColorAllocate($base_image,0,0,0);
             // $col[1] = ImageColorAllocate($base_image,2, 119, 189);
+
+            // var_dump($imgH); die();
+
+            // imagefilledrectangle($base_image, 1, 1, 31, 31, imagecolorallocatealpha($base_image, 155, 218, 255, 127));
 
             imagefill($base_image, 0, 0, $col[0]);
 
@@ -97,4 +104,5 @@
 
             return $target_image;
         }
+
     }

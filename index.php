@@ -23,7 +23,7 @@
     
 </head>
 
-<body>
+<body> 
 
     <div class="container">
         <div class="row">
@@ -37,56 +37,13 @@
 
                     <div class="card-body">
                         <fieldset>
-                            <form method="post" action="" class="text-center">
+                            <form method="post" action="index.php" class="text-center">
                                 <div class="input-group">
                                     <?php
                                         
-                                        if(isset($_POST['downloadBtn'])){
-                                            //getting the user img url from input field
-                                            $imgname = $_POST['name_file'];
-                                            $ext = pathinfo($imgname, PATHINFO_EXTENSION);
-
-                                            $url = "https://";   
-                                            // Append the host(domain name, ip) to the URL.   
-                                            $url.= $_SERVER['HTTP_HOST'];   
-                                            
-                                            // Append the requested resource location to the URL   
-                                            $url.= $_SERVER['REQUEST_URI'];
-
-                                            $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";  
-                                            $CurPageURL = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-
-                                            $imgURL = $_POST['file']; //storing in variable
-                                            $regPattern = '/\.(jpe?g|png|gif|bmp)$/i'; //pattern to validataing img extension
-
-                                            var_dump($CurPageURL); die();
-
-                                            // if(preg_match($regPattern, $imgURL)){ //if pattern matched to user img url
-                                            //     $initCURL = curl_init($imgURL); //intializing curl
-                                            //     curl_setopt($initCURL, CURLOPT_RETURNTRANSFER, true);
-                                            //     $downloadImgLink = curl_exec($initCURL); //executing curl
-                                            //     curl_close($initCURL); //closing curl
-                                            //     // now we convert the base 64 format to jpg to download
-                                            //     // header('Content-type: image/jpg'); //in which extension you want to save img
-                                            //     // header('Content-Disposition: attachment;filename="qrcode.'.$ext.'"'); //in which name you want to save img
-
-                                            //     header('Content-type: image/jpg'); //in which extension you want to save img
-                                            //     header('Content-Disposition: attachment;filename="image.jpg"'); //in which name you want to save img
-                                            //     echo $downloadImgLink;
-                                            // }
-                                            
-                                            $initCURL = curl_init($imgURL); //intializing curl
-                                            curl_setopt($initCURL, CURLOPT_RETURNTRANSFER, true);
-                                            $downloadImgLink = curl_exec($initCURL); //executing curl
-                                            curl_close($initCURL); //closing curl
-
-                                            header('Content-type: image/jpg'); //in which extension you want to save img
-                                            header('Content-Disposition: attachment;filename="image.jpg"'); //in which name you want to save img
-                                            echo $downloadImgLink;
-                                        }
-                                        
                                         if (isset($_POST['generate'])){
-                                            include "plugin/phpqrcode/qrlib.php"; 
+                                            include "plugin/phpqrcode/qrlib.php";
+                                            // include "plugin/phpqrcode-1.1.4/qrlib.php";
                                             /*create folder*/
                                             $tempdir="img-qrcode/";
                                             if (!file_exists($tempdir))
@@ -97,14 +54,17 @@
                                             QRcode::png($_POST['teks_qr'], $file_path, "H", 10, 2);
                                             
                                             echo "<div class='col-md-12'>";
-                                            echo "<input type='text' name='name_file' required value='$file_name'><input type='text' name='file' required value='$file_path'>";
-                                            echo "<p>Code QR : <button type='submit' name='downloadBtn' class='btn btn-outline-info btn-sm'>Download</button></p>";
+                                            echo "<input type='hidden' id='nameFile' name='name_file' required value='$file_name'><input type='hidden' name='file' required value='$file_path'>";
+                                            // echo "<p>Code QR : <button type='submit' name='downloadBtn' class='btn btn-outline-info btn-sm'>Download</button></p>";
+
+                                            // echo "<p>Code QR : <a href='download.php?file=$file_name' class='btn btn-outline-info btn-sm'>Download</a></p>";
+                                            echo "<p>Code QR : <a onclick ='myLocation()' class='btn btn-outline-info btn-sm'>Download</a></p>";
                                             
                                             echo "<p><figure class='figure'>";
 
                                     ?>
-                                    
-                                    
+
+
 
                                     <div id="box-qrcode">
                                         <div class="qrcode"></div>
@@ -117,8 +77,6 @@
                                             echo "</figure></p>";
                                             echo "<p><a href='' class='btn btn-secondary btn-block'>Back </a></p>";
                                             echo "</div>";
-
-                                            
 
                                         } else {
                                     ?>
@@ -146,50 +104,22 @@
                 <!-- <div class="card-footer text-center">
 
                 </div> -->
+
             </div>
         </div>
     </div>
 
-    <!-- <div class="container center">
-        <div class="card">
-            <div class="card-body">
+    <script>
+        function myLocation(){
 
-                <p class="card-title text-center"><b>Generate QR Code</b></p>
+            var file = document.getElementById("nameFile").value;
 
-                <fieldset>
-                    <form method="post" action="" class="text-center">
-                        <div class="input-group mb-3">
-                        
-                        <?php
-                        if (isset($_POST['generate'])){
-                            include "plugin/phpqrcode/qrlib.php"; 
-                            /*create folder*/
-                            $tempdir="img-qrcode/";
-                            if (!file_exists($tempdir))
-                            mkdir($tempdir, 0755);
-                            $file_name=date("Ymd").rand().".png";	
-                            $file_path = $tempdir.$file_name;
-                            
-                            QRcode::png($_POST['teks_qr'], $file_path, "H", 10, 2);
-                            
-                            echo "<p>QR Code :</p>";
-                            echo "<p><img src='".$file_path."' /></p>";
-                            echo "<p> <a href=''>Back </a></p>";
-                        }else {
-                        ?>
-                        
-                        <input type="text" name="teks_qr" id="teks_qr" minlength="3" required value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>">
-                            <button type="submit" name="generate" class="btn btn-primary ml-3">Generate</button>
-                        </div>
+            // alert(file);
 
-                        <?php
-                            }
-                        ?>
-                    </form>
-                </fieldset>
-            </div>
-        </div>
-    </div> -->
+            location = "download.php?file=" + file;
+        }
+    </script>
+
 </body>
 
 </html>

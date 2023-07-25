@@ -27,6 +27,94 @@
     }
   
   .xxx {
-    background-color: hsl(202, 98%, 37%)!important;
-    background-color: rgba(2, 119, 189, 0.95)!important;
+    background-color: rgb(155, 218, 255)!important;
+    background-color: rgba(32, 55, 71, 0.95)!important;
   }
+
+
+
+
+
+
+
+
+
+  @font-face {
+    font-family: 'QR-font';
+    src: url('fonts/QR font tfb.ttf');
+    font-weight: normal;
+    font-style: normal;
+    }
+ *,#btn_submit,a:link{
+    font-family: 'Roboto', sans-serif;
+ }
+ .sample_qrcode{
+    font-family: QR-font;
+    margin:0;
+    padding-top:15px;
+    padding-left:15px;
+    padding-right:-20px;
+    padding-bottom:-20px;
+    font-size:110px;
+    color:#000;
+    background-color:#fff;
+ }
+ .color_container{
+    display:flex;
+    margin:-15px 0;
+    padding:0;
+ }
+ .display_fore_color{
+    display:inline-block;
+    background-color:#000;
+    width:20px;
+    height:20px;
+    border:solid 1px #aaa;
+    border-radius:2px;   
+ }
+ .display_back_color{
+    display:inline-block;
+    background-color:#fff;
+    width:20px;
+    height:20px;
+    border:solid 1px #aaa;
+    border-radius:2px;
+ }
+ .span_forecolor,.span_backcolor{
+    margin-right:5px;
+    background-color:blue;
+    width:22px;
+    height:22px;
+    border:solid 1px #aaa;
+    border-radius:2px;
+ }
+ .span_forecolor:hover,.span_backcolor:hover{
+    cursor:pointer;
+    border:solid 1px #444;
+ }
+ fieldset label {
+    display:block;
+    margin: 5px 0px;
+ }
+ #qr_code_data{
+    width: 330px;
+    height: 33px;
+    border: 1px solid #ddd;
+    margin: 5px 0px;
+    padding: 0px 5px;
+ }
+ #btn_submit{
+    display: inline;
+    margin: -10px 0px;
+    background-color: #91091e;
+    color: white;
+    border-radius:3px;
+    opacity: 0.8;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+ }
+ #btn_submit:hover{
+    opacity: 1;
+ }
