@@ -13,13 +13,13 @@
         left: 0;
         opacity: 0.7;
 
-        border: 2px dotted #ffcccc;
-        border-radius: 10px;
+        /* border: 1px dotted #ffcccc; */
+        border-radius: 8px;
         /* background-color: #affffd; */
 
-        background: #000046;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #0277bd, transparent);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, rgb(2, 119, 189), transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #0277bd;  fallback for old browsers
+        background: -webkit-linear-gradient(to top, #0277bd, #bbb);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, rgb(2, 119, 189), #bbb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
     .img-qr {

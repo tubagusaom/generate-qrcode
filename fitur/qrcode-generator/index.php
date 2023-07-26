@@ -100,7 +100,7 @@
                                                 // echo "<p>Code QR : <button type='submit' name='downloadBtn' class='btn btn-outline-info btn-sm'>Download</button></p>";
 
                                                 // echo "<p>Code QR : <a href='download.php?file=$file_name' class='btn btn-outline-info btn-sm'>Download</a></p>";
-                                                echo "<p>Code QR : <a onclick ='myLocation()' class='btn btn-outline-info btn-sm'>Download <i class='bi bi-cloud-arrow-down'></i></a></p>";
+                                                echo "<p>Code QR : <a onclick ='myLocation()' class='btn btn-outline-info btn-sm'>Download <i class='bi bi-download'></i></a></p>";
                                                 
                                                 echo "<p><figure class='figure'>";
 
