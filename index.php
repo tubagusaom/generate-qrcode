@@ -80,9 +80,9 @@
                             ?>
 
                             <div class="form-group">
-                                <a href="<?=$CurPageURL?>qrcode-generator" target="_blank">
+                                <a href="<?=$CurPageURL?>fitur/qrcode-generator" target="_blank">
                                     <button type="button" class="submit-button-tb">
-                                        <i class="fa fa-hand-pointer" style="transform: rotate(100deg);"></i> Click Here
+                                        <i class="fa fa-hand-pointer" style="transform: rotate(100deg);"></i> Other Features
                                     </button>
                                 </a>
                             </div>
