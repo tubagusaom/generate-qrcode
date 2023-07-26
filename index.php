@@ -37,12 +37,10 @@
         
         alert(w + ' - ' + h);
     </script> -->
+
+    <?php include "fitur/config/config.php"; ?>
 </head>
 <body>
-
-
-
-
     
     <!-- Particles.js Container -->
     <div id="particles-js"></div>
@@ -73,14 +71,9 @@
                                 <label class="label-control" for="semail">Email address</label>
                                 <div class="help-block with-errors"></div>
                             </div> -->
-                            
-                            <?php
-                                $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";  
-                                $CurPageURL = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-                            ?>
 
                             <div class="form-group">
-                                <a href="<?=$CurPageURL?>fitur/qrcode-generator" target="_blank">
+                                <a href="<?=$base_url?>fitur/qrcode-generator">
                                     <button type="button" class="submit-button-tb">
                                         <i class="fa fa-hand-pointer" style="transform: rotate(100deg);"></i> Other Features
                                     </button>
