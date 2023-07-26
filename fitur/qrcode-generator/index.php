@@ -125,7 +125,7 @@
                                             <div class="col-md-9">
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control" name="teks_qr" id="teks_qr" minlength="3" required placeholder="" value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>" >
-                                                    <label for="teks_qr">Example : https://itconsultant.biz.id</label>
+                                                    <label class="text-body-tertiary" for="teks_qr">Example : https://itconsultant.biz.id</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
@@ -157,24 +157,24 @@
                                     var CurrentYear = new Date().getFullYear()
                                     document.write(CurrentYear)
                                 </script>
-                                <a class="link-info mb-3 me-2 mb-md-0 text-decoration-none lh-1" href="https://itconsultant.biz.id/">ICI</a>. All rights reserved.
+                                <a class="link-warning mb-3 me-2 mb-md-0 text-decoration-none lh-1" href="https://itconsultant.biz.id/">ICI</a>. All rights reserved.
                             </span>
                         </div>
 
                         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex p-2">
                             <li class="ms-3">
                                 <a class="text-body-secondary" href="https://twitter.com/Tera_Byte_" target="_blank">
-                                    <i class="bi bi-twitter"></i>
+                                    <i class="bi bi-twitter text-info"></i>
                                 </a>
                             </li>
                             <li class="ms-3">
                                 <a class="text-body-secondary" href="https://www.instagram.com/tera.bytee/" target="_blank">
-                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-instagram text-danger"></i>
                                 </a>
                             </li>
                             <li class="ms-3">
                                 <a class="text-body-secondary" href="https://www.facebook.com/Rock.Sla.N.ker.RolL" target="_blank">
-                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-facebook text-primary"></i>
                                 </a>
                             </li>
                         </ul>
