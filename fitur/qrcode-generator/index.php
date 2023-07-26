@@ -42,7 +42,7 @@
                     <nav class="navbar navbar-expand-lg bg-primary rounded-1" data-bs-theme="dark">
                         <div class="container-fluid">
 
-                            <a class="navbar-brand fw-semibold" href="../../"><i class="bi bi-code-slash"></i> ICI</a>
+                            <a class="navbar-brand fw-bold text-warning-emphasis" href="../../"><i class="bi bi-unity"></i> ICI</a>
 
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
                             <div class="collapse navbar-collapse" id="navbarText">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="../../"><i class="bi bi-house-fill"></i> Home</a>
+                                        <a class="nav-link" aria-current="page" href="../../"><i class="bi bi-house"></i> Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link active" href="<?=$base_url?>"><i class="bi bi-qr-code-scan"></i> Generate QR Code</a>
