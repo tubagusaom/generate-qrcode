@@ -160,7 +160,7 @@
                     <a href="https://itconsultant.biz.id/">ICI</a>. All rights reserved. -->
 
                     <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
-                        <div class="col-md-4 d-flex align-items-center mt-1 p-2">
+                        <div class="col-md-4 d-flex align-items-center mt-1">
                             <span class="mb-3 mb-md-0 text-body-secondary">
                                 Copyright &copy;
                                 <script>
@@ -171,7 +171,7 @@
                             </span>
                         </div>
 
-                        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex p-2">
+                        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                             <li class="ms-3">
                                 <a class="text-body-secondary" href="https://twitter.com/Tera_Byte_" target="_blank">
                                     <i class="bi bi-twitter"></i>
