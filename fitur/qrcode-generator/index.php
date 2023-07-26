@@ -42,7 +42,7 @@
                     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
                         <div class="container-fluid">
 
-                            <a class="navbar-brand fw-semibold" href="#"><i class="bi bi-asterisk"></i> FEATURES</a>
+                            <a class="navbar-brand fw-semibold" href="#"><i class="bi bi-code-slash"></i> FEATURES</a>
 
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -142,22 +142,7 @@
                     </div>
                 </div>
 
-                <!-- <div id="footer" class="mt-4" style="font-size:11.5px;">
-                    Copyright ©
-                    <script>
-                        var CurrentYear = new Date().getFullYear()
-                        document.write(CurrentYear)
-                    </script>
-                    <a href="https://itconsultant.biz.id/">ICI</a>. All rights reserved.
-                </div> -->
-
                 <div id="footer" class="mt-4" style="font-size:11.5px;">
-                    <!-- Copyright ©
-                    <script>
-                        var CurrentYear = new Date().getFullYear()
-                        document.write(CurrentYear)
-                    </script>
-                    <a href="https://itconsultant.biz.id/">ICI</a>. All rights reserved. -->
 
                     <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
                         <div class="col-md-4 d-flex align-items-center mt-1 p-2">
