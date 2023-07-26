@@ -171,7 +171,7 @@
                             </span>
                         </div>
 
-                        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex p-3">
+                        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                             <li class="ms-3">
                                 <a class="text-body-secondary" href="https://twitter.com/Tera_Byte_" target="_blank">
                                     <i class="bi bi-twitter"></i>
