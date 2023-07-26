@@ -39,10 +39,10 @@
             <div class="col-md-12">
 
                 <div id="header">
-                    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+                    <nav class="navbar navbar-expand-lg bg-primary rounded-1" data-bs-theme="dark">
                         <div class="container-fluid">
 
-                            <a class="navbar-brand fw-semibold" href="#"><i class="bi bi-code-slash"></i> FEATURES</a>
+                            <a class="navbar-brand fw-semibold" href="../../"><i class="bi bi-code-slash"></i> ICI</a>
 
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -71,7 +71,7 @@
                 </div>
 
                 <div id="body" class="mt-3">
-                    <div class="card">
+                    <div class="card rounded-1">
 
                         <div class="card-header text-center fs-5 fw-bolder">
                             Generate QR Code
@@ -79,8 +79,8 @@
 
                         <div class="card-body">
                             <fieldset>
-                                <form method="post" action="" class="text-center">
-                                    <div class="input-group">
+                                <form method="post" action="" class="form-floating text-center">
+                                    <!-- <div class="input-group flex-nowrap"> -->
                                         <?php
                                             
                                             if (isset($_POST['generate'])){
@@ -100,7 +100,7 @@
                                                 // echo "<p>Code QR : <button type='submit' name='downloadBtn' class='btn btn-outline-info btn-sm'>Download</button></p>";
 
                                                 // echo "<p>Code QR : <a href='download.php?file=$file_name' class='btn btn-outline-info btn-sm'>Download</a></p>";
-                                                echo "<p>Code QR : <a onclick ='myLocation()' class='btn btn-outline-info btn-sm'>Download</a></p>";
+                                                echo "<p>Code QR : <a onclick ='myLocation()' class='btn btn-outline-info btn-sm'>Download <i class='bi bi-cloud-arrow-down'></i></a></p>";
                                                 
                                                 echo "<p><figure class='figure'>";
 
@@ -115,26 +115,30 @@
                                         
                                         <?php
                                                 echo "</figure></p>";
-                                                echo "<p><a href='' class='btn btn-secondary btn-block'>Back </a></p>";
+                                                echo "<p class='d-flex flex-column'><a href='' class='btn btn-secondary btn-block rounded-1'><i class='bi bi-arrow-left-short'></i> Back </a></p>";
                                                 echo "</div>";
 
                                             } else {
                                         ?>
-                                        
-                                        <div class="form-group row col-md-12">
-                                            <div class="col-md-9 mb-2">
-                                                <input type="text" class="form-control" name="teks_qr" id="teks_qr" minlength="3" required placeholder="Example : https://itconsultant.biz.id" value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>" >
-                                            </div>
 
-                                            <div class="col-md-3 mb-2">
-                                                <button type="submit" name="generate" class="btn btn-primary btn-block">Create QR Code</button>
+                                        <div class="row g-2">
+                                            <div class="col-md-9">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" name="teks_qr" id="teks_qr" minlength="3" required placeholder="" value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>" >
+                                                    <label for="teks_qr">Example : https://itconsultant.biz.id</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-floating d-flex flex-column">
+                                                    <button type="submit" name="generate" class="btn btn-secondary btn-block mt-2 rounded-1">Create QR Code</button>
+                                                </div>
                                             </div>
                                         </div>
 
                                         <?php
                                             }
                                         ?>
-                                    </div>
+                                    <!-- </div> -->
                                 </form>
                             </fieldset>
                         </div>
@@ -142,7 +146,8 @@
                     </div>
                 </div>
 
-                <div id="footer" class="mt-4" style="font-size:11.5px;">
+                <div id="footer" class="container fixed-bottom mt-4" style="font-size:11.5px;">
+                <!-- <div id="footer" class="container fixed-bottom mt-4 fs-6"> -->
 
                     <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
                         <div class="col-md-4 d-flex align-items-center mt-1 p-2">
@@ -152,7 +157,7 @@
                                     var CurrentYear = new Date().getFullYear()
                                     document.write(CurrentYear)
                                 </script>
-                                <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" href="https://itconsultant.biz.id/">ICI</a>. All rights reserved.
+                                <a class="link-info mb-3 me-2 mb-md-0 text-decoration-none lh-1" href="https://itconsultant.biz.id/">ICI</a>. All rights reserved.
                             </span>
                         </div>
 
