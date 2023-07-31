@@ -11,15 +11,15 @@
     <meta name="keywords" content="generate, qr, Generate QR, qrcode, barcode" />
 
     <!-- Favicon  -->
-    <link rel="shortcut icon" href="images/generate_qr.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/generate_qr.png">
+    <link rel="shortcut icon" href="../../images/t3b3313_yellow_circle.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../images/t3b3313_yellow_circle.png">
     
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
 	<meta property="og:site_name" content="ICI" /> <!-- website name -->
 	<meta property="og:site" content="https://itconsultant.biz.id/" /> <!-- website link -->
 	<meta property="og:title" content="IT CONSULTANT INDONESIA"/> <!-- title shown in the actual shared post -->
 	<meta property="og:description" content="IT CONSULTANT INDONESIA" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="https://itconsultant.biz.id/images/t3b3313_transparent.png" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:image" content="https://itconsultant.biz.id/images/t3b3313_yellow_circle.png" /> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="https://itconsultant.biz.id/" /> <!-- where do you want your post to link to -->
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
@@ -42,7 +42,10 @@
                     <nav class="navbar navbar-expand-lg bg-primary rounded-1" data-bs-theme="dark">
                         <div class="container-fluid">
 
-                            <a class="navbar-brand fw-bold text-warning-emphasis" href="../../"><i class="bi bi-unity"></i> ICI</a>
+                            <a class="navbar-brand fw-bold text-warning-emphasis" href="../../">
+                                <!-- <i class="bi bi-unity"></i> ICI -->
+                                <img class="logo-image" src="../../images/t3b3313_yellow_transparent.png" alt="tera.bytee">
+                            </a>
 
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -50,9 +53,9 @@
 
                             <div class="collapse navbar-collapse" id="navbarText">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href="../../"><i class="bi bi-house"></i> Home</a>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-item">
                                         <a class="nav-link active" href="<?=$base_url?>"><i class="bi bi-qr-code-scan"></i> Generate QR Code</a>
                                     </li>

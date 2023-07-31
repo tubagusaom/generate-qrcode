@@ -25,6 +25,17 @@
     .img-qr {
         z-index: 9;
     }
+
+    .navbar .logo-image {
+        width: 55px;
+        /* margin-bottom: 2.5rem; */
+    }
+
+    @media (min-width: 768px) {
+        .navbar .logo-image {
+            width: 48px;
+        }
+    }
   
   .xxx {
     background-color: rgb(155, 218, 255)!important;

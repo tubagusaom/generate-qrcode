@@ -13,7 +13,7 @@
 	<meta property="og:site" content="https://itconsultant.biz.id/" /> <!-- website link -->
 	<meta property="og:title" content="IT CONSULTANT INDONESIA"/> <!-- title shown in the actual shared post -->
 	<meta property="og:description" content="IT CONSULTANT INDONESIA" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="https://itconsultant.biz.id/images/t3b3313_transparent.png" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:image" content="https://itconsultant.biz.id/images/t3b3313_yellow_circle.png" /> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="https://itconsultant.biz.id/" /> <!-- where do you want your post to link to -->
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
@@ -27,7 +27,7 @@
 	<link href="css/styles.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
-    <link rel="icon" href="images/maintenance.png">
+    <link rel="icon" href="images/t3b3313_yellow_circle.png">
 
     <!-- <script>
         var w = window.innerWidth;
@@ -53,7 +53,7 @@
 
         <!-- Image Logo -->
         <a href="https://itconsultant.biz.id/" target="_blank">
-            <img class="logo-image" src="images/t3b3313_transparent.png" alt="alternative">
+            <img class="logo-image" src="images/t3b3313_yellow_transparent.png" alt="tera.bytee">
         </a> 
 
 
@@ -75,7 +75,8 @@
                             <div class="form-group">
                                 <a href="<?=$base_url?>fitur/qrcode-generator">
                                     <button type="button" class="submit-button-tb">
-                                        <i class="fa fa-hand-pointer" style="transform: rotate(100deg);"></i> Other Features
+                                        <!-- <i class="fa fa-hand-pointer" style="transform: rotate(100deg);"></i> &nbsp; Other Features -->
+                                        <i class="fa fa-fighter-jet"></i> &nbsp; Other Features
                                     </button>
                                 </a>
                             </div>
