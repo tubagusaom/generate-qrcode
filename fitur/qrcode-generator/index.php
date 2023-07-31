@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>ICI - Generate QR Code</title>
-    <meta name="description" content="Generate QR Code By ICI" />
+    <meta name="description" content="IT CONSULTANT INDONESIA" />
     <meta name="keywords" content="generate, qr, Generate QR, qrcode, barcode" />
 
     <!-- Favicon  -->
