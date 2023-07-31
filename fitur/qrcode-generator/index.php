@@ -18,7 +18,7 @@
 	<meta property="og:site_name" content="ICI" /> <!-- website name -->
 	<meta property="og:site" content="https://itconsultant.biz.id/" /> <!-- website link -->
 	<meta property="og:title" content="ICI - Generate QR Code"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Generate QR Code By ICI" /> <!-- description shown in the actual shared post -->
+	<meta property="og:description" content="IT CONSULTANT INDONESIA" /> <!-- description shown in the actual shared post -->
 	<meta property="og:image" content="https://itconsultant.biz.id/images/t3b3313_yellow_circle.png" /> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="https://itconsultant.biz.id/" /> <!-- where do you want your post to link to -->
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
