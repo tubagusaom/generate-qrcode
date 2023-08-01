@@ -316,8 +316,8 @@ input[type='checkbox'] {
 	height: 3.5rem;
 	border: 1px solid #ebdf00;
 	border-radius: 32px;
-	background-color: #ebdf00;
-	color: #830b5e;
+	background-color: transparent;
+	color: #ebdf00;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -327,8 +327,8 @@ input[type='checkbox'] {
 
 .submit-button-tb:hover {
 	border: 1px solid #ebdf00;
-	background-color: transparent;
-	color: #ebdf00;
+	background-color: #ebdf00;
+	color: #830b5e;
 }
 
 
@@ -346,7 +346,7 @@ canvas {
 	width: 100%;
 	height: 100%;
 	background-color: #000;
-	background-image: url("../images/bg.jpg");
+	background-image: url("../images/bg-gradient.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -366,6 +366,11 @@ canvas {
 .header .logo-image {
 	width: 130px;
 	margin-bottom: 2.5rem;
+	opacity: 0.8;
+}
+
+.header .logo-image:hover {
+	opacity: 0.6;
 }
 
 .header .logo-text {
@@ -381,10 +386,12 @@ canvas {
 
 .header h1 {
 	margin-bottom: 0.875rem;
+	text-shadow: 2px 2px 4px #ebdf00;
 }
 
 .header .p-large {
 	margin-bottom: 2.75rem;
+	text-shadow: 2px 2px 5px #ebdf00;
 }
 
 .header .social-container {
