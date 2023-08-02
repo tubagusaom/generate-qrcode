@@ -128,7 +128,7 @@
                                             <div class="col-md-9">
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control" name="teks_qr" id="teks_qr" minlength="3" required placeholder="" value="<?php $val=isset($_POST['generate']) ? $_POST['teks_qr'] : ""; echo $val; ?>" >
-                                                    <label class="text-body-tertiary" for="teks_qr">Example : https://example.com</label>
+                                                    <label class="text-body-tertiary" for="teks_qr">Input Example : https://example.com</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
