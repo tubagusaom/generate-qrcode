@@ -76,9 +76,7 @@
                 <div id="body" class="mt-3">
                     <div class="card rounded-1">
 
-                        <div class="card-header text-center fs-5 fw-bolder">
-                            Generate QR Code
-                        </div>
+                        <div class="card-header text-center fs-5 fw-bolder">Generate QR Code</div>
 
                         <div class="card-body">
                             <fieldset>
