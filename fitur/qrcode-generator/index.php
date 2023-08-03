@@ -148,7 +148,12 @@
                             </fieldset>
                         </div>
 
+                        <!-- <div class="card-footer text-body-secondary">
+                            &nbsp;
+                        </div> -->
+
                     </div>
+
                 </div>
 
                 <div id="footer" class="container fixed-bottom mt-4" style="font-size:11.5px;">
