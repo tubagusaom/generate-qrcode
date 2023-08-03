@@ -64,11 +64,11 @@
                                     </li>
                                 </ul>
 
-                                <span class="navbar-text">
+                                <span class="navbar-text"> ICI Feature
                                 
-                                    <div class="spinner-grow text-warning" role="status" title="ICI Feature">
+                                    <!-- <div class="spinner-grow text-warning" role="status" title="ICI Feature">
                                         <span class="visually-hidden">Loading...</span>
-                                    </div>
+                                    </div> -->
 
                                 </span>
                             </div>
