@@ -27,13 +27,13 @@
     }
 
     .navbar .logo-image {
-        width: 55px;
+        width: 50px;
         /* margin-bottom: 2.5rem; */
     }
 
     @media (min-width: 768px) {
         .navbar .logo-image {
-            width: 48px;
+            width: 44px;
         }
     }
   
