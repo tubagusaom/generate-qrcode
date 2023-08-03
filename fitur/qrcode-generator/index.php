@@ -44,7 +44,7 @@
 
                             <a class="navbar-brand fw-bold text-warning-emphasis" href="../../">
                                 <!-- <i class="bi bi-unity"></i> ICI -->
-                                <img class="logo-image" src="../../images/t3b3313_yellow_transparent.png" alt="tera.bytee">
+                                <img class="logo-image" src="../../images/t3b3313_yellow_transparent.png" alt="tera.bytee" title="ICI">
                             </a>
 
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +65,7 @@
                                 </ul>
 
                                 <span class="navbar-text">
-                                    IT Consultant Indonesia Feature
+                                    ICI Feature
                                 </span>
                             </div>
 
