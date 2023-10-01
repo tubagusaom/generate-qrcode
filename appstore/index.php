@@ -45,7 +45,7 @@
                    <div class="col-md-4 text-end">
                        <div class="dropdown pt-2">
                           <a class="cp pt-4 fw-bolder fs-8 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            Vinoth Basker
+                            Tera Byte
                           </a>
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Dashboard</a></li>
